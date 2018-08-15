@@ -25,24 +25,16 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
             <ul class="navbar-nav roboto">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="tutorial.html" class="nav-link">Tutorials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Buy me Coffee</a>
-                </li>
+                <?php
+                    wp_nav_menu (
+                        array(
+                            'theme_location' => 'header-menu',
+                            'container' => false,
+                            'menu' => false,
+                            'fallback_cb' => false
+                        )
+                    );
+                ?>
                 <li class="nav-item" data-toggle="modal" data-target="#searchModal">
                     <span id="search" href="#search" class="nav-link"><span class="fa fa-search"></span></span>
                 </li>
