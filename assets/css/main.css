@@ -1,0 +1,408 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6ecf0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.profilepic {
+    bottom: 80px;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.rmpd {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.blog-container {
+    padding: 50px;
+}
+
+.top-banner {
+    height: 50vh;
+}
+
+.banner {
+    height: 50vh;
+}
+
+.postbanner {
+    height: 50vh;
+}
+
+.banner, .postbanner {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.banner img {
+    height: 25vh;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 95%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    .wd-p-t {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .c404 h1 {
+        font-size: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wd-p-t {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .c404 h1 {
+        font-size: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .c404 h1 {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-container {
+        padding: 30px;
+    }
+
+    .postbanner {
+        height: 50vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .c404 h1 {
+        font-size: 130px;
+    }
+}
+
+.md-line {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.md-line:nth-last-child(-n+1) {
+    margin-bottom: 10px;
+    border-bottom: 0px;
+}
+
+.md-line:first-child {
+    margin-top: 0px;
+}
+
+.date {
+    font-weight: 300;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.footer {
+    padding-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 0px;
+}
+
+/* WYSIWYG custom css */
+
+.content li + li {
+    margin-top: 0.25em;
+}
+
+.content p:not(:last-child),
+.content dl:not(:last-child),
+.content ol:not(:last-child),
+.content ul:not(:last-child),
+.content blockquote:not(:last-child),
+.content pre:not(:last-child),
+.content table:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    color: #363636;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.content h1:not(:first-child) {
+    margin-top: 1em;
+}
+
+.content h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5714em;
+}
+
+.content h2:not(:first-child) {
+    margin-top: 1.1428em;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.6666em;
+}
+
+.content h3:not(:first-child) {
+    margin-top: 1.3333em;
+}
+
+.content h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.8em;
+}
+
+.content h5 {
+    font-size: 1.125em;
+    margin-bottom: 0.8888em;
+}
+
+.content h6 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.content blockquote {
+    background-color: whitesmoke;
+    border-left: 5px solid #dbdbdb;
+    padding: 1.25em 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content ol {
+    list-style: decimal outside;
+    margin-left: 2em;
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content ul {
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content ul ul {
+    list-style-type: circle;
+    margin-top: 0.5em;
+}
+
+.content ul ul ul {
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content dd {
+    margin-left: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content figure {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content figure:not(:first-child) {
+    margin-top: 2em;
+}
+
+.content figure:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.content figure img {
+    display: inline-block;
+}
+
+.content figure figcaption {
+    font-style: italic;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content pre {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    padding: 1.25em 1.5em;
+    white-space: pre;
+    word-wrap: normal;
+}
+
+.content sup,
+.content sub {
+    font-size: 75%;
+}
+
+.content table {
+    width: 100%;
+}
+
+.content table td,
+.content table th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+}
+
+.content table th {
+    color: #363636;
+    text-align: left;
+}
+
+.content table td {
+    font-family: 'Roboto', sans-serif;
+    color: #6c757d !important;
+}
+
+.content table thead td,
+.content table thead th {
+    border-width: 0 0 2px;
+    color: #363636;
+}
+
+.content table tfoot td,
+.content table tfoot th {
+    border-width: 2px 0 0;
+    color: #363636;
+}
+
+.content table tbody tr:last-child td,
+.content table tbody tr:last-child th {
+    border-bottom-width: 0;
+}
+
+.content.is-small {
+    font-size: 0.75rem;
+}
+
+.content.is-medium {
+    font-size: 1.25rem;
+}
+
+.content.is-large {
+    font-size: 1.5rem;
+}
+
+/* WYSIWYG ends here */
+
+.form-control {
+    border: transparent;
+    background-color: #eaeaea;
+}
+
+.form-control:focus {
+    border-color: #6c757d;
+}
+
+.c404 {
+    height: 100vh;
+    background-color: #000;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.flexbox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.btn-fb, .btn-tw, .btn-lk {
+    color: #fff;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.btn-fb:hover, .btn-tw:hover, .btn-lk:hover {
+    background-color: #000;
+}
+
+.btn-fb {
+    background-color: #3B5998;
+}
+
+.btn-tw {
+    background-color: #1DA1F2;
+}
+
+.btn-lk {
+    background-color: #0077B5;
+}
+
+.gh {
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.small {
+    font-size: 40%;
+}
+
+#search {
+    cursor: pointer;
+}
