@@ -4,7 +4,7 @@
             <div class="postbanner flexbox text-center">
                 <div class="mx-auto align-self-center">
                 <h2 class="text-white align-middle bold wd-p-t"><?php the_title(); ?></h2>
-                <p class="text-white date roboto">Posted on <?php the_date(); ?> in <a href="#" class="bold text-success"><?php the_category(); ?></a></p>
+                <p class="text-white date roboto">Posted on <?php the_date(); ?> in <span class="bold text-success text-uppercase"><?php the_category(' '); ?></span></p>
                 </div>
             </div>
         </div>
