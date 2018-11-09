@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 
-<?php get_template_part ( 'inc/indexCarousel' ) ?>
+<?php get_template_part ( 'inc/tutorialCarousel' ) ?>
 
 	<!-- Blog container -->
-    <div class="container bg-white blog-container">
+    <div class="container ajaxPost bg-white blog-container">
 
         <h1 class="bold" style="line-height: 1">Latest tutorials<br><small class="small text-secondary">My recent tutorials and articles</small></h1>
 
         <?php
         // Argument that defines how many posts is outputted.
-        $args = array('posts_per_page' => 5 );
+        $args = array('posts_per_page' => 5, 'paged' => 1 );
         // Variable to call WP_Query.
         $query = new WP_Query ( $args );
 
@@ -19,15 +19,16 @@
 
         endwhile; endif;
         // Function to reset post data.
-        wp_reset_postdata();
+        //wp_reset_postdata();
         ?>
 
-        <br>
+    </div>
 
-        <!-- Go to Articles -->
-        <div class="loadp text-center">
-            <button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button>
-        </div>
+    <br>
+
+    <!-- Load More Articles -->
+    <div class="loadp text-center">
+        <button type="button" class="btn btn-secondary loadMore">LOAD MORE <span id="sloading" class="fa fa-long-arrow-down"></span></button>
     </div>
 
     <br><br>
