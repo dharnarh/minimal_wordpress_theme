@@ -27,7 +27,7 @@
                         array(
                             'theme_location' => 'header-menu',
                             'container' => false,
-                            'menu' => false,
+                            'items_wrap' => '%3$s',
                             'fallback_cb' => false
                         )
                     );
