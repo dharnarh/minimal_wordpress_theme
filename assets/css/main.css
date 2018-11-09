@@ -7,6 +7,10 @@ a:hover {
     text-decoration: none;
 }
 
+.text-success a {
+    color: inherit;
+}
+
 .bold {
     font-weight: bold;
 }
