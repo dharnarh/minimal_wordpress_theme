@@ -60,7 +60,8 @@ function load_posts_by_ajax_callback() {
 
   endwhile; endif;
   // Function to reset post data.
-	//wp_reset_postdata();
+	wp_reset_postdata();
+	wp_die();
 				
 }
 
