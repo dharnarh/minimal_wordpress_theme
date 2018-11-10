@@ -19,7 +19,7 @@
 
         endwhile; endif;
         // Function to reset post data.
-        //wp_reset_postdata();
+        wp_reset_postdata();
         ?>
 
     </div>
