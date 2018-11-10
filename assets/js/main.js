@@ -13,14 +13,20 @@ jQuery(function($) {
       url: ajaxurl,
       data: data,
       type: 'POST',
-      beforeSend : function( xhr ) {
-        $('#sloading').removeClass('fa-long-arrow-down').addClass('fa-spinner');
+      beforeSend : function() {
+        $('#sloading').removeClass('fa-long-arrow-down').addClass('fa-spin fa-spinner');
       },
       success : function( response ) {
-        $('#sloading').removeClass('fa-spinner').addClass('fa-long-arrow-down');
-        $('.ajaxPost').append(response);
-        console.log(response);
-        page++;
+
+        if (response != "") {
+          $('#sloading').removeClass(' fa-spin fa-spinner').addClass('fa-long-arrow-down');
+          $('.ajaxPost').append(response);
+          console.log(response);
+          page++;
+        } else {
+          $('.loadMore').hide();
+        }
+
       }
     });
   });
