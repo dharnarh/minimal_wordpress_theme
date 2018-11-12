@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-    <!-- Bootstrap CSS -->
     <meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
     <?php wp_head(); ?>
   </head>
@@ -53,10 +51,10 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <input type="text" placeholder="Search Article" class="form-control roboto"/>
+                            <input type="text" placeholder="Search Article" autofocus="true" name="keyword" id="searcharticle" class="form-control roboto"/>
                         </div>
                     </form>
-                    <div id="searchresult"></div>
+                    <div id="searchresult"><!-- Search result here --></div>
                 </div>
             </div>
         </div>
