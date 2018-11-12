@@ -1,9 +1,10 @@
 jQuery(function($) {
 
-  var page = 2;
   var ajaxurl = "../../wp-admin/admin-ajax.php";
 
   $('body').on('click', '.loadMore', function() {
+
+    var page = 2;
     var data = {
       'action': 'load_posts_by_ajax',
       'page': page,
@@ -30,4 +31,25 @@ jQuery(function($) {
       }
     });
   });
+
+  $('#searcharticle').keyup( function() {
+
+    var data = {
+      'action': 'ajax_fetch',
+      'keyword': $('#searcharticle').val(),
+    };
+
+    $.ajax({
+
+      url: ajaxurl,
+      data: data,
+      type: 'POST',
+
+      success: function( data ) {
+        $('#searchresult').html(data);
+      }
+
+    });
+  });
+
 });
