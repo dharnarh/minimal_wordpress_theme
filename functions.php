@@ -3,6 +3,9 @@
 // WordPress title tag support
 add_theme_support ( 'title-tag' );
 
+// Wordpress HTML5 support
+add_theme_support('html5');
+
 // Add scripts and styles to theme
 function wp_styles_n_scripts () {
 	wp_enqueue_style( 'bootstrapCSS', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' );
@@ -54,7 +57,7 @@ function load_posts_by_ajax_callback() {
 	$args = array( 'posts_per_page' => 5, 'paged' => $paged );
 	$query = new WP_Query( $args );
 
-	if ( $query->have_posts () ) : while( $query->have_posts() ) : $query->the_post();
+	if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
 
     get_template_part ( 'content', get_post_format() );
 
@@ -67,3 +70,28 @@ function load_posts_by_ajax_callback() {
 
 add_action('wp_ajax_load_posts_by_ajax', 'load_posts_by_ajax_callback');
 add_action('wp_ajax_nopriv_load_posts_by_ajax', 'load_posts_by_ajax_callback');
+
+
+// Ajax function call to search for articles on ajax_fetch()
+function ajax_fetch() {
+
+	$query = new WP_Query (
+		array (
+			'posts_per_page' => -1,
+			's' => esc_attr( $_POST['keyword'] ),
+			'post_type' => 'post', 'data'
+		)
+	);
+
+	if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+		<h4 class="bold"><a class="text-body" href="<?php echo esc_url( the_permalink() ); ?>"><?php the_title(); ?></a>
+		<br><small class="small text-secondary"><?php echo get_the_date(); ?></small></h4>
+	<?php endwhile; endif;
+	// Function to reset post data.
+	wp_reset_postdata();
+	die();
+
+}
+
+add_action('wp_ajax_ajax_fetch', 'ajax_fetch');
+add_action('wp_ajax_nopriv_ajax_fetch', 'ajax_fetch');
