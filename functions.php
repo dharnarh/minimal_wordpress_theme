@@ -1,5 +1,8 @@
 <?php
 
+// Wordpress HTML5 support
+add_theme_support ( 'html5' );
+
 // WordPress title tag support
 add_theme_support ( 'title-tag' );
 
