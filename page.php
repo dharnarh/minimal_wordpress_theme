@@ -1,9 +1,13 @@
-<?php get_header(); ?>
+<?php
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+  get_header();
 
-        get_template_part ( 'inc/page-single', get_post_format() );
+	if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-    endwhile; endif; ?>
+    get_template_part ( 'inc/page-single', get_post_format() );
 
-<?php get_footer(); ?>
+  endwhile; endif;
+
+  get_footer();
+
+?>
