@@ -6,11 +6,10 @@
                 <div class="mx-auto align-self-center">
                     <img style="background: transparent" src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/profilepic.png" alt="Profile picture" class="shadow-sm img-fluid img-thumbnail rounded-circle">
                     <h5 class="text-white">Software developer, Graphic designer, Tech enthusiast</h5>
-                    <a href="#"><span class="gh fa fa-github"></span></a>
-                    <a href="#"><span class="gh fa fa-instagram"></span></a>
-                    <a href="#"><span class="gh fa fa-behance"></span></a>
-                    <a href="#"><span class="gh fa fa-twitter"></span></a>
-                    <a href="#"><span class="gh fa fa-linkedin"></span></a>
+                    <a href="https://github.com/humarh-dharnarh"><span class="gh fa fa-github"></span></a>
+                    <a href="https://instagram.com/humarh_dharnarh"><span class="gh fa fa-instagram"></span></a>
+                    <a href="https://twitter.com/humarh_dharnarh"><span class="gh fa fa-twitter"></span></a>
+                    <a href="https://linkedin.com/in/humarh-dharnarh"><span class="gh fa fa-linkedin"></span></a>
                 </div>
             </div>
         </div>
