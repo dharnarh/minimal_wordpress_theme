@@ -5,12 +5,12 @@
     <form action="">
       <div class="form-row">
         <div class="form-group col-sm">
-          <input type="text" class="form-control roboto" placeholder="Email Address">
+          <input type="text" class="form-control roboto" disabled placeholder="Email Address">
         </div>
         <div class="form-group col-sm">
-          <input type="text" class="form-control roboto" placeholder="First Name">
+          <input type="text" class="form-control roboto" disabled placeholder="First Name">
         </div>
-        <button class="btn btn-outline-success" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
+        <button disabled class="btn btn-outline-success" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
       </div>
     </form>
   </div>
@@ -19,7 +19,7 @@
 
   <!-- Footer section -->
   <div class="container-fluid bg-white footer">
-    <p class="text-secondary text-center">All article written with <span class="text-danger" style="font-size: 30px">&hearts;</span> by Umar Farouq<br>Mail: <a href="mailto:hello@umarfarouq.com" class="text-danger">hello@umarfarouq.com</a></p>
+    <p class="text-secondary text-center">All article written with <span class="text-danger" style="font-size: 30px">&hearts;</span> by Umar Farouq<br>Mail: <a href="mailto:hello@umarfarouq.website" class="text-danger">hello@umarfarouq.website</a></p>
   </div>
 
   <?php wp_footer(); ?>
