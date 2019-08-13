@@ -5,7 +5,7 @@
 	<!-- Blog container -->
   <div class="container ajaxPost bg-white blog-container">
 
-    <h1 class="bold" style="line-height: 1">Latest tutorials<br><small class="small text-secondary">My recent tutorials and articles</small></h1>
+    <h1 class="bold text-black uf-fl" style="line-height: 1">Latest Articles<small class="small d-block pt-1 text-secondary">Hope you find it worth reading</small></h1>
 
     <?php
       // Argument that defines how many posts is outputted.
@@ -27,10 +27,12 @@
   <br>
 
   <!-- Load More Articles -->
+  <?php if ($query->have_posts() > 5) : ?>
   <div class="loadp text-center">
-    <button type="button" class="btn btn-secondary loadMore">LOAD MORE <span id="sloading" class="fa fa-long-arrow-down"></span></button>
+    <button type="button" class="btn btn-outline-danger loadMore">LOAD MORE <span id="sloading" class="fa fa-long-arrow-down"></span></button>
   </div>
 
-  <br><br>
+  <br>
+  <?php endif; ?>
 
 <?php get_footer(); ?>
