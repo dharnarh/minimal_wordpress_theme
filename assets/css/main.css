@@ -1,13 +1,21 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e6ecf0;
+  background-color: #f8f8f8;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-.text-success a {
+.a-hover:hover {
+  color: #dc3545 !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.text-danger a, .text-success a {
   color: inherit;
 }
 
@@ -30,6 +38,7 @@ a:hover {
 
 .blog-container {
   padding: 50px;
+  border: 1px solid #dee2e6 !important;
 }
 
 .top-banner {
@@ -40,13 +49,21 @@ a:hover {
   height: 50vh;
 }
 
+.uf-top-banner {
+  height: 80vh;
+}
+
+.uf-banner {
+  height: 80vh;
+}
+
 .postbanner {
   height: 50vh;
 }
 
-.banner,
+.banner, .uf-banner,
 .postbanner {
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.055);
 }
 
 .banner img {
@@ -129,8 +146,12 @@ a:hover {
   font-weight: 300;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
   border-color: transparent;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  border-color: var(--red);
 }
 
 .footer {
@@ -375,6 +396,10 @@ a:hover {
   align-items: flex-start;
 }
 
+.btn, .form-control {
+  border-radius: 0 !important;
+}
+
 .btn-fb,
 .btn-tw,
 .btn-lk {
@@ -402,11 +427,37 @@ a:hover {
   background-color: #0077B5;
 }
 
+.btn-cs {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dc3545;
+}
+
+.uf-fl::first-letter {
+  color: #dc3545 !important;
+}
+
 .gh {
-  background-color: #333;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px;
+  background-color: #ffffff;
+  color: #dc3545;
+  border-radius: 0;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.gh:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .small {
@@ -415,4 +466,9 @@ a:hover {
 
 #search {
   cursor: pointer;
+}
+
+.bg-black {
+  border-top: 5px solid #dc3545;
+  background-color: #09080e !important;
 }
