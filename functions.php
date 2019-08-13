@@ -46,7 +46,7 @@ add_filter ( 'nav_menu_css_class', 'li_class', 1,3 );
 
 // Add classes to wp_menu li a
 function li_a_class ( $class ) {
-	$class['class'] = 'nav-link';
+	$class['class'] = 'nav-link text-white a-hover';
 	return $class;
 }
 add_filter ( 'nav_menu_link_attributes', 'li_a_class' );
