@@ -11,7 +11,7 @@
   <body>
     
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
               );
             ?>
             <li class="nav-item" data-toggle="modal" data-target="#searchModal">
-              <span id="search" href="#search" class="nav-link"><span class="fa fa-search"></span></span>
+              <span id="search" href="#search" class="nav-link text-danger"><span class="fa fa-search"></span></span>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
     <!--Search Modal -->
     <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="ModalSearch" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content rounded-0">
           <div class="modal-header">
             <h5 class="modal-title" id="ModalSearch">Search for Article</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -51,7 +51,7 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <input type="text" placeholder="Search Article" autofocus="true" name="keyword" id="searcharticle" class="form-control roboto"/>
+                <input type="text" placeholder="Search" autofocus="true" name="keyword" id="searcharticle" class="form-control roboto"/>
               </div>
             </form>
             <div id="searchresult"><!-- Search result here --></div>
