@@ -5,7 +5,7 @@
 	<!-- Blog container -->
   <div class="container bg-white blog-container">
 
-    <h1 class="bold" style="line-height: 1">Latest tutorials<br><small class="small text-secondary">My recent tutorials and articles</small></h1>
+  <h1 class="bold text-black uf-fl" style="line-height: 1"><span class="fa fa-thumb-tack uf-fl"></span> Pinned Articles<small class="small d-block pt-1 text-secondary">My starred articles</small></h1>
 
     <?php
       // Argument that defines how many posts is outputted.
@@ -26,7 +26,7 @@
 
     <!-- Go to Articles -->
     <div class="loadp text-center">
-      <a href="/tutorials"><button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button></a>
+      <a href="/articles"><button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button></a>
     </div>
   </div>
 
