@@ -17,7 +17,7 @@
         <div class="text-white mx-auto align-self-center">
           <h1 class="bold text-center">404</h1>
           <p class="text-center roboto">Finally, someone gets to see this page. Thumbs up</p>
-          <p class="text-center roboto">Now head back to <a href="#">HOME</a></p>
+          <p class="text-center roboto">Now head back to <a href="<?php echo get_bloginfo( 'wpurl' );?>">HOME</a></p>
         </div>
       </div>
     </div>
