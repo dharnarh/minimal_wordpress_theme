@@ -10,7 +10,7 @@
         <div class="form-group col-sm">
           <input type="text" class="form-control roboto" disabled placeholder="First Name">
         </div>
-        <button disabled class="btn btn-outline-success" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
+        <button disabled class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
       </div>
     </form>
   </div>
@@ -18,8 +18,8 @@
   <br><br>
 
   <!-- Footer section -->
-  <div class="container-fluid bg-white footer">
-    <p class="text-secondary text-center">All article written with <span class="text-danger" style="font-size: 30px">&hearts;</span> by Umar Farouq<br>Mail: <a href="mailto:hello@umarfarouq.website" class="text-danger">hello@umarfarouq.website</a></p>
+  <div class="container-fluid bg-white footer border-top">
+    <p class="text-secondary text-center">All article written with <span class="text-danger" style="font-size: 30px">&hearts;</span> by Umar Farouq<br>Mail: <a href="mailto:talk@umarfarouq.website" class="text-danger">talk@umarfarouq.website</a></p>
   </div>
 
   <?php wp_footer(); ?>
