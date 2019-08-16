@@ -26,7 +26,7 @@
 
     <!-- Go to Articles -->
     <div class="loadp text-center">
-      <a href="/articles"><button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button></a>
+      <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>"><button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button></a>
     </div>
   </div>
 
