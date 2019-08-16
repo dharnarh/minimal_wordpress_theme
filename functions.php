@@ -98,3 +98,50 @@ function ajax_fetch() {
 
 add_action('wp_ajax_ajax_fetch', 'ajax_fetch');
 add_action('wp_ajax_nopriv_ajax_fetch', 'ajax_fetch');
+
+// Function to activate pinned box checkbox icon
+function pinned_post_box() {
+	add_meta_box(
+		'sm_meta', __( 'Pin Post', 'sm-text-domain' ), 'sm_pinned_post_callback', 'post'
+	);
+}
+
+// Function to show pinned checkbox icon
+function sm_pinned_post_callback( $post ) {
+	$pinned = get_post_meta( $post->ID ); ?>
+	<p>
+    <div class="sm-row-content">
+      <label for="meta-pinned">
+        <input type="checkbox" name="meta-pinned" value="yes" id="meta-pinned"
+        <?php if ( isset( $pinned['meta-pinned'] ) ) checked ( $pinned['meta-pinned'][0], 'yes' ); ?>>
+        <?php _e( 'Pin this post' ); ?>
+      </label>
+    </div>
+  </p>
+<?php	
+}
+
+add_action ( 'add_meta_boxes', 'pinned_post_box' );
+
+// Function to save meta pinned post
+function sm_meta_save ( $post_id ) {
+  // Check save status
+  $is_autosave = wp_is_post_autosave ( $post_id );
+  $is_revision = wp_is_post_revision ( $post_id );
+  $is_valid_nonce = ( isset( $_POST['sm_nonce'] )
+    && wp_verify_nonce ( $_POST['sm_nonce'], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+  // Exit script on post type status
+  if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+    return;
+  }
+
+  // Check for input and saves
+  if ( isset( $_POST['meta-pinned'] ) ) {
+    update_post_meta ( $post_id, 'meta-pinned', 'yes' );
+  } else {
+    update_post_meta ( $post_id, 'meta-pinned', '' );
+  }
+}
+
+add_action ( 'save_post', 'sm_meta_save' );

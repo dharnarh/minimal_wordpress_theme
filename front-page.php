@@ -9,7 +9,7 @@
 
     <?php
       // Argument that defines how many posts is outputted.
-      $args = array('posts_per_page' => 5 );
+      $args = array('posts_per_page' => 5, 'meta_key' => 'meta-pinned', 'meta_value' => 'yes' );
       // Variable to call WP_Query.
       $query = new WP_Query ( $args );
 
