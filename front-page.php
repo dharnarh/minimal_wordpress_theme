@@ -2,6 +2,15 @@
 
 <?php get_template_part ( 'inc/indexCarousel' ) ?>
 
+  <!-- About me container -->
+  <div class="container bg-white blog-container">
+
+    <h1 class="bold text-black uf-fl" style="line-height: 1"><span class="fa fa-user uf-fl"></span> About Me<small class="small d-block pt-1 text-secondary">Who am I</small></h1>
+
+  </div>
+
+  <br><br>
+
 	<!-- Blog container -->
   <div class="container bg-white blog-container">
 
@@ -26,10 +35,10 @@
 
     <!-- Go to Articles -->
     <div class="loadp text-center">
-      <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>"><button type="button" class="btn btn-outline-secondary">ALL TUTORIALS <span class="fa fa-long-arrow-right"></span></button></a>
+      <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ) ?>"><button type="button" class="btn btn-outline-secondary">All Articles <span class="fa fa-long-arrow-right"></span></button></a>
     </div>
   </div>
 
-    <br><br>
+  <br><br>
 
 <?php get_footer(); ?>
