@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #f8f8f8;
 }
 
@@ -462,6 +462,10 @@ a:hover {
 
 .small {
   font-size: 40%;
+}
+
+.esmall {
+  font-size: 80%;
 }
 
 #search {
