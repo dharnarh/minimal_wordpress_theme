@@ -13,12 +13,12 @@
     <!-- Navbar section -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <a href="<?php echo get_bloginfo( 'wpurl' );?>" class="navbar-brand">
           <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/img/uf.png" width="50" alt="Umar Farouq"/>
         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
           <ul class="navbar-nav roboto">
