@@ -24,8 +24,8 @@ add_action ( 'wp_enqueue_scripts', 'wp_styles_n_scripts' );
 
 // Add google fonts to theme
 function wp_google_fonts () {
-	wp_register_style('Poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto');
-	wp_enqueue_style( 'Poppins');
+	wp_register_style('Oswald', 'https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap|Roboto');
+	wp_enqueue_style( 'Oswald');
 }
 add_action ( 'wp_print_styles', 'wp_google_fonts' );
 
