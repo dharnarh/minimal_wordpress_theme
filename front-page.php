@@ -5,7 +5,27 @@
   <!-- About me container -->
   <div class="container bg-white blog-container">
 
-    <h1 class="bold text-black uf-fl" style="line-height: 1"><span class="fa fa-user uf-fl"></span> About Me<small class="small d-block pt-1 text-secondary">Who am I</small></h1>
+    <h1 class="bold text-black uf-fl" style="line-height: 1">
+      <span class="fa fa-user uf-fl"></span> About Me
+      <small class="small d-block pt-1 text-secondary">A bit something from me</small>
+    </h1>
+    <div class="content">
+      <p>
+        Personal? Full name: Umar Farouq Mohammed, citizen of Ghana and Nigeria, I am still trying to 
+        figure out my full potential and might just end up a SUPERMAN so here's a many few things about me, I am more interested in 
+        knowledge but hates Mathematics plus School and gets curious enough to learn how things work, loves psychology, a 
+        bit introvert, friendly, always ready to help others in anyway. Getting a BSc in Computer
+        Science by 2021 at AIT University in Ghana.
+      </p>
+      <p>
+        Profession? I am a full stack software developer working web development 
+        to cross-platform mobile development using technologies such as HTML, CSS, 
+        JavaScript, PHP, Node.js, little Java, Python, C++ and frameworks such as 
+        Bootstrap, Laravel, WordPress for CMS, Vue, React, React Native and Git for 
+        version control also an intermediate UI designer using software such as 
+        Adobe XD, Adobe Illustrator, Adobe Photoshop, Figma.
+      </p>
+    </div>
 
   </div>
 
@@ -14,7 +34,10 @@
 	<!-- Blog container -->
   <div class="container bg-white blog-container">
 
-  <h1 class="bold text-black uf-fl" style="line-height: 1"><span class="fa fa-thumb-tack uf-fl"></span> Pinned Articles<small class="small d-block pt-1 text-secondary">My starred articles</small></h1>
+  <h1 class="bold text-black uf-fl" style="line-height: 1">
+    <span class="fa fa-thumb-tack uf-fl"></span> Pinned Articles
+    <small class="small d-block pt-1 text-secondary">My starred articles</small>
+  </h1>
 
     <?php
       // Argument that defines how many posts is outputted.
