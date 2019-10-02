@@ -5,7 +5,7 @@
 	<!-- Blog container -->
   <div class="container ajaxPost bg-white blog-container">
 
-    <h1 class="bold text-black uf-fl" style="line-height: 1">Latest Articles<small class="small d-block pt-1 text-secondary">Hope you find it worth reading</small></h1>
+    <h3 class="bold text-black uf-fl" style="line-height: 1">Latest Articles</h3>
 
     <?php
       // Argument that defines how many posts is outputted.
