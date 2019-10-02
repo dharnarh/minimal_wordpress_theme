@@ -1,8 +1,8 @@
   <!-- Newsletter section -->
-  <div class="container bg-white blog-container text-center">
+  <div class="container bg-white blog-container">
     <h3 class="text-black bold">Subscribe to the Newsletter</h3>
-    <p class="text-secondary roboto">Recieve quality articles written by Umar Farouq.<br> Student • Software Developer • UI Designer</p>
-    <div class="text-center">
+    <p class="text-secondary roboto">Recieve weekly quality articles written by Umar Farouq.</p>
+    <div class="">
       <a href="https://tinyletter.com/humarh" target="_blank">
         <button class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
       </a>
