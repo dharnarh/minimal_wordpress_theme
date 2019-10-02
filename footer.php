@@ -1,18 +1,12 @@
   <!-- Newsletter section -->
   <div class="container bg-white blog-container text-center">
     <h3 class="text-black bold">Subscribe to the Newsletter</h3>
-    <p class="text-secondary roboto">Recieve quality articles written by Umar Farouq.<br> Software Developer, Graphic Designer, Tech Enthusiast</p>
-    <form action="">
-      <div class="form-row">
-        <div class="form-group col-sm">
-          <input type="text" class="form-control roboto" disabled placeholder="Email Address">
-        </div>
-        <div class="form-group col-sm">
-          <input type="text" class="form-control roboto" disabled placeholder="First Name">
-        </div>
-        <button disabled class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
-      </div>
-    </form>
+    <p class="text-secondary roboto">Recieve quality articles written by Umar Farouq.<br> Student • Software Developer • UI Designer</p>
+    <div class="text-center">
+      <a href="https://tinyletter.com/humarh" target="_blank">
+        <button class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
+      </a>
+    </div>
   </div>
 
   <br><br>
@@ -23,5 +17,6 @@
   </div>
 
   <?php wp_footer(); ?>
-</body>
-</html> 
+  </body>
+
+  </html>
