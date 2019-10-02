@@ -5,10 +5,9 @@
   <!-- About me container -->
   <div class="container bg-white blog-container">
 
-    <h1 class="bold text-black uf-fl" style="line-height: 1">
+    <h3 class="bold text-black uf-fl" style="line-height: 1">
       <span class="fa fa-user uf-fl"></span> About Me
-      <small class="small d-block pt-1 text-secondary">A bit something from me</small>
-    </h1>
+    </h3>
     <div class="content">
       <p>
         Personal? Full name: Umar Farouq Mohammed, citizen of Ghana and Nigeria, I am still trying to 
@@ -34,10 +33,9 @@
 	<!-- Blog container -->
   <div class="container bg-white blog-container">
 
-  <h1 class="bold text-black uf-fl" style="line-height: 1">
+  <h3 class="bold text-black uf-fl" style="line-height: 1">
     <span class="fa fa-thumb-tack uf-fl"></span> Pinned Articles
-    <small class="small d-block pt-1 text-secondary">My starred articles</small>
-  </h1>
+  </h3>
 
     <?php
       // Argument that defines how many posts is outputted.
