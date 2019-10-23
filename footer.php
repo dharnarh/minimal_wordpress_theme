@@ -1,12 +1,10 @@
   <!-- Newsletter section -->
-  <div class="container bg-white blog-container">
-    <h3 class="text-black bold">Subscribe to the Newsletter</h3>
+  <div class="container bg-white blog-container text-center">
+    <h3 class="text-black bold">Subscribe to Newsletter</h3>
     <p class="text-secondary roboto">Recieve weekly quality articles written by Umar Farouq.</p>
-    <div class="">
-      <a href="https://tinyletter.com/humarh" target="_blank">
-        <button class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe</button>
-      </a>
-    </div>
+    <a href="https://tinyletter.com/humarh" target="_blank">
+      <button class="btn btn-outline-danger" style="margin-bottom: 1rem; margin-left: 5px">Subscribe Now</button>
+    </a>
   </div>
 
   <br><br>
