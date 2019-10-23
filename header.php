@@ -11,7 +11,7 @@
   <body>
     
     <!-- Navbar section -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar sticky-top navbar-expand-md navbar-expand-lg navbar-dark bg-black">
       <div class="container">
         <a href="<?php echo get_bloginfo( 'wpurl' );?>" class="navbar-brand">
           <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/img/uf.png" width="50" alt="Umar Farouq"/>
