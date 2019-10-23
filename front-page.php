@@ -8,7 +8,7 @@
     <h3 class="bold text-black uf-fl" style="line-height: 1">
       <span class="fa fa-user uf-fl"></span> About Me
     </h3>
-    <div class="content">
+    <div class="content text-justify">
       <p>
         Personal? Full name: Umar Farouq Mohammed, citizen of Ghana and Nigeria, I am still trying to 
         figure out my full potential and might just end up a SUPERMAN so here's a many few things about me, I am more interested in 

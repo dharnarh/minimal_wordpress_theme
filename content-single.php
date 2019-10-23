@@ -15,7 +15,7 @@
 <!-- Blog container -->
 <div class="container bg-white blog-container">
 
-  <div class="content">
+  <div class="content text-justify">
 
     <?php
       the_content();
